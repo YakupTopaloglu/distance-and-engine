@@ -26,6 +26,11 @@ void loop() {
   Serial.println(" cm");
   digitalWrite(in3, HIGH);
   digitalWrite(in4, LOW);
+  fonksiyon(mesafe);
+}
+
+void fonksiyon(int mesafe)
+{
   if(mesafe>200)
   {
     analogWrite(e2,255);
